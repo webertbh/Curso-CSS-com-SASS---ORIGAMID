@@ -1,0 +1,216 @@
+/* @import "colors";
+@import "buttons";
+
+$preto: #999;
+
+div{
+    background: $preto;
+    height: 200px;
+    width: 200px;
+    a {
+        color: pink;
+    }
+}
+*/
+.erro {
+    color: red;
+    font-weight: bold;
+}
+
+.button-erro{
+    @extend .erro;
+    padding: 20px;
+    width: 200px;
+} 
+
+$tema: oceano;
+$primary-color: black;
+$secondary-color: gray;
+
+@if $tema == oceano {
+    $primary-color: blue;
+    $secondary-color: orange;
+}  @else if $tema == deserto {
+    $primary-color: yellow;
+    $secondary-color: purple;
+}
+
+p {
+    color: $primary-color;
+    background: $secondary-color;
+}
+
+@mixin type-1 ($size) {
+    font-family: monospace;
+    font-weight: normal;
+    @if $size == 16 {
+        font-size: 1em;;
+    } @else if $size == 18 {
+        font-size: 1.25em;
+    } @else if $size == 24 {
+        font-size: 1.5em;
+    }
+}
+
+p {
+    @include type-1(16);
+}
+
+@mixin d ($device) {
+    @if $device == m {
+        @media (max-width: 300px){
+            @content;
+        }
+    }
+    @else if $device == t {
+        @media (max-width: 600px){
+            @content;
+        }
+    }
+    @else if $device == s {
+        @media (max-width: 900px){
+            @content;
+        }
+    }
+}
+
+div {
+    width: 100%;
+    @include d(t){
+        width: 80%;
+    }
+    @include d(m){
+        width: 60%;
+    }
+}
+
+div {
+    $width: 300;
+    width: $width;
+    @if $width > 400px {
+        height: $width * 1.5;
+    } @else {
+        height: $width;
+    }
+}
+
+@function em($pixels, $contexto: 16){
+    @return ($pixels / $contexto) * 1em; 
+}
+
+@function grid ($colunas,$total:12 ){
+    @return($colunas / $total) * 100%;
+}
+
+div{
+    width: grid(4);
+}
+
+
+@mixin title-large {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: monospace;
+    line-height: 1;
+}
+
+@mixin border-box {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@mixin separador ($color, $largura) {
+    &::after{
+        content: '';
+        display: block;
+        width: $largura;
+        height: 4px;
+        background: $color;
+    }
+}
+
+@mixin box-shadow($shadow...) {
+    box-shadow: $shadow;
+    -moz-box-shadow: $shadow;  
+    -webkit-box-shadow: $shadow;  
+}
+
+@mixin mobile {
+    @media (max-width: 600px){
+        @content;
+    }
+}
+
+$cor-primaria: red;
+$font-primaria: monospace;
+$glutter: 60px;
+
+section {
+    max-width: 600px;
+    margin: 0 auto;
+    @include border-box;
+}
+
+.modal {
+    @include box-shadow(10px 10px 0 0 rgba(0,0,0,.5), 
+                        15px 15px 0 0 rgba(0,0,0,.5),
+                        20px 20px 0 0 rgba(0,0,0,.5)); 
+    h1 {
+        color: $cor-primaria;
+        font-family: $font-primaria;
+        @include title-large;
+        @include separador(blue, 570px);
+        @include mobile {
+            color: #84e;
+            font-size: 2em;
+        }
+        }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.4;
+        max-width: 400px;
+    }
+    line-height: 1.4;
+    max-width: 400px;
+    @include mobile {
+            font-size: .8em;
+        }
+
+    a {
+        display: block;
+        max-width: 120px;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+        background: $cor-primaria;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $font-primaria;
+        &:hover {
+            background: blue;
+        }
+    }
+}
+
+ul {
+    text-align: center;
+    li {
+        display: inline-block;
+        list-style: none;
+        a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            background: blue;
+            color: white;
+            &:hover{
+                background: transparentize(blue, .5);
+                /*background: darken(blue, 20%); cor mais escura*/
+                /*background: lighten (blue, 20%) cor mais clara*/
+            }
+        } 
+    }
+}

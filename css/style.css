@@ -1,0 +1,175 @@
+/* @import "colors";
+@import "buttons";
+
+$preto: #999;
+
+div{
+    background: $preto;
+    height: 200px;
+    width: 200px;
+    a {
+        color: pink;
+    }
+}
+*/
+/* line 15, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+.erro, .button-erro {
+  color: red;
+  font-weight: bold;
+}
+
+/* line 20, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+.button-erro {
+  padding: 20px;
+  width: 200px;
+}
+
+/* line 38, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+p {
+  color: blue;
+  background: orange;
+}
+
+/* line 55, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+p {
+  font-family: monospace;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+/* line 77, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+div {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  /* line 77, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+  div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 300px) {
+  /* line 77, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+  div {
+    width: 60%;
+  }
+}
+
+/* line 87, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+div {
+  width: 300;
+  height: 300;
+}
+
+/* line 105, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+div {
+  width: 33.33333%;
+}
+
+/* line 149, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+section {
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 155, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+.modal {
+  box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.5), 15px 15px 0 0 rgba(0, 0, 0, 0.5), 20px 20px 0 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.5), 15px 15px 0 0 rgba(0, 0, 0, 0.5), 20px 20px 0 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.5), 15px 15px 0 0 rgba(0, 0, 0, 0.5), 20px 20px 0 0 rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
+  max-width: 400px;
+}
+
+/* line 159, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+.modal h1 {
+  color: red;
+  font-family: monospace;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: monospace;
+  line-height: 1;
+}
+
+/* line 124, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+.modal h1::after {
+  content: '';
+  display: block;
+  width: 570px;
+  height: 4px;
+  background: blue;
+}
+
+@media (max-width: 600px) {
+  /* line 159, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+  .modal h1 {
+    color: #84e;
+    font-size: 2em;
+  }
+}
+
+/* line 170, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+.modal p {
+  font-size: 1.2em;
+  line-height: 1.4;
+  max-width: 400px;
+}
+
+@media (max-width: 600px) {
+  /* line 155, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+  .modal {
+    font-size: .8em;
+  }
+}
+
+/* line 181, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+.modal a {
+  display: block;
+  max-width: 120px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  background: red;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+/* line 192, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+.modal a:hover {
+  background: blue;
+}
+
+/* line 198, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+ul {
+  text-align: center;
+}
+
+/* line 200, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+/* line 203, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  background: blue;
+  color: white;
+}
+
+/* line 209, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/style.scss */
+ul li a:hover {
+  background: rgba(0, 0, 255, 0.5);
+  /*background: darken(blue, 20%); cor mais escura*/
+  /*background: lighten (blue, 20%) cor mais clara*/
+}
+
+/*# sourceMappingURL=style.css.map */

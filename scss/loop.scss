@@ -1,0 +1,29 @@
+$lista: facebook twitter snapchat instagram;
+
+@each $item in $lista {
+    .rede-#{$item} {
+       background: url('img/#{$item}.png'); 
+    }
+}
+
+
+
+$numero: 1;
+
+@while $numero <= 6 {
+    .type-#{$numero}{
+        font-size: 16 * $numero + px;
+    }
+    $numero: $numero + 1;
+}
+
+$container: 960;
+$gutter: 20;
+$colunas: 12;
+
+@for $i from 1 through 12{
+    $width: $container / $colunas * $i - $gutter;
+    .grid-#{$i} {
+        width: $width + px;
+    }
+}

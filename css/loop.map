@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "loop.css",
+	"sources": [
+		"../scss/loop.scss"
+	],
+	"sourcesContent": [
+		"$lista: facebook twitter snapchat instagram;\r\n\r\n@each $item in $lista {\r\n    .rede-#{$item} {\r\n       background: url('img/#{$item}.png'); \r\n    }\r\n}\r\n\r\n\r\n\r\n$numero: 1;\r\n\r\n@while $numero <= 6 {\r\n    .type-#{$numero}{\r\n        font-size: 16 * $numero + px;\r\n    }\r\n    $numero: $numero + 1;\r\n}\r\n\r\n$container: 960;\r\n$gutter: 20;\r\n$colunas: 12;\r\n\r\n@for $i from 1 through 12{\r\n    $width: $container / $colunas * $i - $gutter;\r\n    .grid-#{$i} {\r\n        width: $width + px;\r\n    }\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAGI,AAAA,cAAc,CAAC;EACZ,UAAU,EAAE,uBAAuB;CACrC;;;AAFD,AAAA,aAAa,CAAE;EACZ,UAAU,EAAE,sBAAuB;CACrC;;;AAFD,AAAA,cAAc,CAAC;EACZ,UAAU,EAAE,uBAAuB;CACrC;;;AAFD,AAAA,eAAe,CAAA;EACZ,UAAU,EAAE,wBAAuB;CACrC;;;AAQD,AAAA,OAAO,CAAS;EACZ,SAAS,EAAE,IAAiB;CAC/B;;;AAFD,AAAA,OAAO,CAAS;EACZ,SAAS,EAAE,IAAiB;CAC/B;;;AAFD,AAAA,OAAO,CAAS;EACZ,SAAS,EAAE,IAAiB;CAC/B;;;AAFD,AAAA,OAAO,CAAS;EACZ,SAAS,EAAE,IAAiB;CAC/B;;;AAFD,AAAA,OAAO,CAAS;EACZ,SAAS,EAAE,IAAiB;CAC/B;;;AAFD,AAAA,OAAO,CAAS;EACZ,SAAS,EAAE,IAAiB;CAC/B;;;AAUD,AAAA,OAAO,CAAK;EACR,KAAK,EAAE,IAAW;CACrB;;;AAFD,AAAA,OAAO,CAAK;EACR,KAAK,EAAE,KAAW;CACrB;;;AAFD,AAAA,OAAO,CAAK;EACR,KAAK,EAAE,KAAW;CACrB;;;AAFD,AAAA,OAAO,CAAK;EACR,KAAK,EAAE,KAAW;CACrB;;;AAFD,AAAA,OAAO,CAAK;EACR,KAAK,EAAE,KAAW;CACrB;;;AAFD,AAAA,OAAO,CAAK;EACR,KAAK,EAAE,KAAW;CACrB;;;AAFD,AAAA,OAAO,CAAK;EACR,KAAK,EAAE,KAAW;CACrB;;;AAFD,AAAA,OAAO,CAAK;EACR,KAAK,EAAE,KAAW;CACrB;;;AAFD,AAAA,OAAO,CAAK;EACR,KAAK,EAAE,KAAW;CACrB;;;AAFD,AAAA,QAAQ,CAAI;EACR,KAAK,EAAE,KAAW;CACrB;;;AAFD,AAAA,QAAQ,CAAI;EACR,KAAK,EAAE,KAAW;CACrB;;;AAFD,AAAA,QAAQ,CAAI;EACR,KAAK,EAAE,KAAW;CACrB"
+}

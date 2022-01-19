@@ -1,0 +1,111 @@
+/* line 4, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.rede-facebook {
+  background: url("img/facebook.png");
+}
+
+/* line 4, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.rede-twitter {
+  background: url("img/twitter.png");
+}
+
+/* line 4, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.rede-snapchat {
+  background: url("img/snapchat.png");
+}
+
+/* line 4, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.rede-instagram {
+  background: url("img/instagram.png");
+}
+
+/* line 14, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.type-1 {
+  font-size: 16px;
+}
+
+/* line 14, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.type-2 {
+  font-size: 32px;
+}
+
+/* line 14, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.type-3 {
+  font-size: 48px;
+}
+
+/* line 14, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.type-4 {
+  font-size: 64px;
+}
+
+/* line 14, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.type-5 {
+  font-size: 80px;
+}
+
+/* line 14, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.type-6 {
+  font-size: 96px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-1 {
+  width: 60px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-2 {
+  width: 140px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-3 {
+  width: 220px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-4 {
+  width: 300px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-5 {
+  width: 380px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-6 {
+  width: 460px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-7 {
+  width: 540px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-8 {
+  width: 620px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-9 {
+  width: 700px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-10 {
+  width: 780px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-11 {
+  width: 860px;
+}
+
+/* line 26, ../../Desktop/ORIGAMID/Curso CSS com SASS/scss/loop.scss */
+.grid-12 {
+  width: 940px;
+}
+
+/*# sourceMappingURL=loop.css.map */
